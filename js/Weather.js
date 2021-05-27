@@ -1,7 +1,8 @@
+import WEATHER_API_KEY from './apikey.js'
 export default class Weather {
     
     constructor(city, countryCode) {
-        this.apiKey = '7fb1d257cbd604b8d339cdc970255d7e';
+        this.apiKey = WEATHER_API_KEY;
         this.city = city;
         this.countryCode = countryCode;
     }
