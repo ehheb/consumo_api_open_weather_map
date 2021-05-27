@@ -12,9 +12,9 @@ export default class UI {
     render(weather) {
         this.location.textContent = weather.name + ' / ' + weather.sys.country; 
         this.description.textContent = weather.weather[0]['description'];
-        this.string.textContent = 'Current: ' + weather.main.temp + '°c';
+        this.string.textContent = 'Actual: ' + weather.main.temp + '°c';
         this.minMax.textContent = 'min: ' + weather.main.temp_min + '°c' + ' max: ' + weather.main.temp_max + '°c';
-        this.humidity.textContent = 'Humidity: ' + weather.main.humidity + ' %';
-        this.wind.textContent = 'Wind: ' + weather.wind.speed + ' m/s';
+        this.humidity.textContent = 'Humedad: ' + weather.main.humidity + ' %';
+        this.wind.textContent = 'Viento: ' + weather.wind.speed + ' m/s';
     }
 }
